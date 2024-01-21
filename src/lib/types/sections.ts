@@ -46,7 +46,7 @@ export interface PricingSectionType {
 export interface FaqSectionType {
   title: string,
   description: string,
-  items: FaqType[]
+  items: FaqType[],
 }
 
 export interface AboutSectionType extends Section {

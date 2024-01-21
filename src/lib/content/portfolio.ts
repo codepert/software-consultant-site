@@ -7,30 +7,28 @@
 import { StringKeyValueType } from '../types';
 
 export const socialLinks: StringKeyValueType = {
-  facebook: 'https://www.facebook.com/vatsalsinghkv',
-  instagram: 'https://www.instagram.com/vatsalsinghkv',
-  twitter: 'https://twitter.com/vatsalsinghkv',
-  github: 'https://github.com/vatsalsinghkv',
-  linkedin: 'https://www.linkedin.com/in/vatsalsinghkv/',
+  facebook: '',
+  instagram: '',
+  twitter: '',
+  github: '',
+  linkedin: '',
 };
 
 export const author = {
   name: 'Kodemorph',
-  email: 'nakayusu27@gmail.com',
+  email: 'Kodemorph@gmail.com',
 };
 
 export const seoData = {
-  title: 'Nakano Yusuke| Front-End Developer',
+  title: 'Kodemorph',
   description:
-    'Nakano Yusukeis a full stack developer who specializes in building (and occasionally designing) exceptional visual interfaces.',
+    'Web design & development.',
   author: author.name,
   image:'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
   url: 'https://vatsalsinghkv.vercel.app/',
   keywords: [
-    'Nakano',
-    'Nakano Yusuke',
-    'Portfolio',
-    'Nakano Portfolio ',
-    'Nakano Yusuke Portfolio',
+    'Kodemorph',
+    'web design',
+    'web development',
   ],
 };

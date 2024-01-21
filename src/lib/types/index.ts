@@ -50,7 +50,8 @@ export interface PricingType {
 
 export interface FaqType {
   question: string,
-  answer: string
+  answer: string,
+  isVisible: boolean,
 }
 
 export type StringKeyValueType = {

@@ -2,6 +2,7 @@ import NewProjects from '../components/projects/ProjectsGrid';
 import About from './About';
 import Contact from './Contact';
 import Email from './Email';
+import Faq from './Faq';
 import Hero from './Hero';
 import Footer from './layout/Footer';
 import Layout from './layout/Layout';
@@ -16,6 +17,7 @@ export {
   About,
   Contact,
   Email,
+  Faq,
   Footer,
   Hero,
   Layout,

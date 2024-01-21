@@ -1,15 +1,11 @@
-import { Faq, Hero, Layout, Pricing, Service } from '@/containers';
-/**
- * TODO: Create separate page for all the projects with filters (vercel | netlify | github api for automation)
- * TODO: Switch to next13 app dir feature, when lottie files start working in app dir
- * TODO: Try test cases
- */
+import { Faq, Hero, Layout, Pricing, Service, FV } from '@/containers';
 
-function Home() {
+const Home = () => {
   return (
     <>
       {/* <SmoothScroll> */}
       <Layout>
+        <FV></FV>
         <Hero />
         <Service />
         <Pricing />
@@ -18,6 +14,6 @@ function Home() {
       {/* </SmoothScroll> */}
     </>
   );
-}
+};
 
 export default Home;

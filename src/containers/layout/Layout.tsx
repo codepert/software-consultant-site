@@ -1,4 +1,4 @@
-import { Email, Footer, Navbar, Social } from '@/containers';
+import { Footer, Navbar } from '@/containers';
 
 type Props = {
   children: React.ReactNode;
@@ -15,8 +15,6 @@ const Layout = ({ children, className = '' }: Props) => {
         {children}
       </main>
       <Footer />
-      {/* <Social /> */}
-      <Email />
     </>
   );
 };

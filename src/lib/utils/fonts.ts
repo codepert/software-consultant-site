@@ -1,4 +1,4 @@
-import { Inter, Roboto_Mono } from 'next/font/google';
+import { Inter, Roboto_Mono, Plus_Jakarta_Sans } from 'next/font/google';
 
 const inter = Inter({
   variable: '--font-inter',
@@ -22,6 +22,18 @@ const robotoMono = Roboto_Mono({
   ],
 });
 
-const fontVariables = `${inter.variable} ${robotoMono.variable}`;
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: '--font-plus-jakarta-sans',
+  subsets: ['latin'],
+  display: 'swap',
+  weight: [
+    '400', // Regular
+    '500', // Medium
+    '600', // Semibold
+    '700', // Bold
+  ],
+})
+
+const fontVariables = `${plusJakartaSans.variable} ${inter.variable} ${robotoMono.variable} `;
 
 export default fontVariables;

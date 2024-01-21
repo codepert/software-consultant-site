@@ -4,7 +4,7 @@ import { author } from '@/lib/content/portfolio';
 import useWindowWidth from '@/lib/hooks/use-window-width';
 import { getBreakpointsWidth } from '@/lib/utils/helper';
 
-import { Button, DarkModeButton, Link as CLink, NavButton } from '@/components';
+import { Link as CLink, NavButton } from '@/components';
 
 import { fadeIn, slideIn } from '@/styles/animations';
 
@@ -89,7 +89,7 @@ const Navbar = () => {
       initial="hidden"
       animate="show"
       id="navbar"
-      className="max-w-[1120px] container mx-auto rounded-full h-[65px]  bg-black-secondary inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
+      className="fixed  max-w-[1120px] container mx-auto rounded-full h-[65px] mt-5  bg-black-secondary inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
     >
       <h1 className="relative text-2xl capitalize font-extrabold text-white text-accent group">
         <Link href="/#hero" className="block font-bold">
@@ -120,33 +120,6 @@ const Navbar = () => {
                 {name}
               </NavItem>
             ))}
-
-            <div className="flex items-center justify-between gap-5 xl:gap-6">
-              {/* {cta && (
-                <Button
-                  type="link"
-                  href={cta.url}
-                  sameTab={cta?.sameTab}
-                  variants={slideIn({
-                    delay: ANIMATION_DELAY + navLinks.length / 10,
-                    direction: 'down',
-                  })}
-                  initial="hidden"
-                  animate="show"
-                >
-                  {cta.title}
-                </Button>
-              )} */}
-              {/* <DarkModeButton
-                onClick={() => setNavbarCollapsed(false)}
-                variants={slideIn({
-                  delay: ANIMATION_DELAY + (navLinks.length + 1) / 10,
-                  direction: 'down',
-                })}
-                initial="hidden"
-                animate="show"
-              /> */}
-            </div>
           </ul>
         </nav>
       )}

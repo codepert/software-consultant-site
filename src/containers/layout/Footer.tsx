@@ -1,8 +1,12 @@
 import { footerSection } from '@/lib/content/footer';
 
+import { Wrapper } from '@/components';
+
+import { getSectionAnimation } from '@/styles/animations';
+
 const Footer = () => {
   return (
-    <footer className="container max-w-[1120px] mx-auto mb-5 font-mono text-xs">
+    <footer className="container max-w-[1120px] mx-auto font-mono text-xs">
       <div className=" flex pt-16">
         <div className="w-1/2">
           <h3 className="text-white text-3xl py-2">{footerSection.title}</h3>

@@ -3,7 +3,7 @@ import { footerSection } from '@/lib/content/footer';
 const Footer = () => {
   return (
     <footer className="container max-w-[1120px] mx-auto font-mono text-xs">
-      <div className=" flex pt-16 px-4">
+      <div className="lg:flex md:flex pt-16 px-4">
         <div className="w-1/2">
           <h3 className="text-white text-3xl py-2">{footerSection.title}</h3>
           <p className=" py-2 text-base text-primary">
@@ -14,13 +14,13 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex-grow ">
-          <div className="flex">
+          <div className="lg:flex">
             <div>
-              <h3 className="text-3xl py-2 pl-20 text-white font-bold  tracking-tighter">
+              <h3 className="text-3xl py-2 lg:pl-20 text-white font-bold  tracking-tighter">
                 {footerSection.readToGetStarted}
               </h3>
             </div>
-            <div className="pl-4">
+            <div className="lg:pl-4">
               <button className="py-4 px-6 bg-white font-bold text-black rounded-full">
                 Book a call
               </button>

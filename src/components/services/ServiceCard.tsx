@@ -19,7 +19,7 @@ const ServiceCard = ({
   return domLoaded ? (
     <motion.div
       {...rest}
-      className="w-full min-w-[330px] mt-1 bg-zinc-900 rounded-xl h-[200px] py-9 px-8 space-y-1  text-left border border-zinc-800"
+      className="w-full mt-1 bg-zinc-900 rounded-xl h-[200px] py-9 px-8 space-y-1  text-left border border-zinc-800"
     >
       <div className="flex items-center justify-between"></div>
       <h4 className="font-medium capitalize duration-200 group-hover:text-accent text-white text-2xl">

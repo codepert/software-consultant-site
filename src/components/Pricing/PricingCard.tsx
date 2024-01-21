@@ -33,7 +33,7 @@ const PricingCard = ({
   return domLoaded ? (
     <motion.div
       {...rest}
-      className={`w-full max-w-[350px] h-[433px] border border-zinc-800 ${boxClassName} rounded-xl relative`}
+      className={`w-full max-w-[350px] h-[433px] border border-zinc-800 ${boxClassName} rounded-xl relative mx-auto`}
     >
       <div className="px-6 py-6 space-y-1 ">
         <h4 className="font-bold capitalize duration-200 group-hover:text-accent text-white text-xl">

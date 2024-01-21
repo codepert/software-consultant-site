@@ -54,14 +54,14 @@ type NavItemsProps = {
 const NavItem = ({ href, children, onClick, index, delay }: NavItemsProps) => {
   return (
     <motion.li
-      className="group"
+      className=""
       variants={slideIn({ delay: delay + index / 10, direction: 'down' })}
       initial="hidden"
       animate="show"
     >
       <CLink
         href={href || `/#${children}`}
-        className="block p-2 duration-500 hover:text-accent text-sm"
+        className="block p-2 duration-500 text-sm"
         onClick={onClick}
         withPadding
       >
@@ -91,10 +91,10 @@ const Navbar = () => {
       id="navbar"
       className="fixed  max-w-screen-lg container mx-auto xs:rounded-none lg:rounded-full md:rounded-full h-[65px] mt-5  bg-black-secondary inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
     >
-      <h1 className="relative text-2xl capitalize font-extrabold text-white text-accent group">
-        <Link href="/#hero" className="block font-bold text-xl">
+      <h1 className="relative text-2xl capitalize font-extrabold text-white text-accent">
+        <Link href="/" className="block font-bold text-xl">
           {author.name}
-          <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-accent duration-300"></div>
+          <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-accent duration-300 "></div>
         </Link>
       </h1>
 
@@ -107,7 +107,7 @@ const Navbar = () => {
       />
 
       {(navbarCollapsed || windowWidth > md) && (
-        <nav className="capitalize absolute text-sm duration-200 md:bg-transparent z-50 w-[90%] left-1/2 -translate-x-1/2 top-full h-max rounded-xl shadow-xl p-6 bg-bg-secondary md:blocks md:static md:w-auto md:left-auto md:transform-none md:top-auto md:rounded-none md:shadow-none md:p-0 md:h-auto">
+        <nav className="bg-black-secondary capitalize absolute text-sm duration-200 md:bg-transparent z-50 w-[100%] left-1/2 -translate-x-1/2 top-full h-max shadow-xl p-6 bg-bg-secondary md:blocks md:static md:w-auto md:left-auto md:transform-none md:top-auto md:rounded-none md:shadow-none md:p-0 md:h-auto">
           <ul className="flex flex-col items-stretch gap-3 list-style-none lg:gap-5 xl:gap-6 md:flex-row md:items-center">
             {navLinks.map(({ name, url }, i) => (
               <NavItem

@@ -6,7 +6,7 @@ import { getBreakpointsWidth } from '@/lib/utils/helper';
 import { Wrapper } from '@/components';
 
 import { getSectionAnimation } from '@/styles/animations';
-import { slideUp } from '@/styles/animations';
+import { slideUp, fadeIn } from '@/styles/animations';
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -38,7 +38,7 @@ const FV = () => {
       <div className="space-y-4 text-center gap-16 ">
         <div className="text-4xl font-bold tracking-tighter md:text-7xl">
           <motion.h1
-            variants={slideUp({ delay: getAnimationDelay(3) })}
+            variants={slideUp({ delay: getAnimationDelay(0.5) })}
             initial="hidden"
             animate="show"
             className="text-slate-900 text-7xl dark:text-slate-200 capitalize mb-2 leading-[1.1]"
@@ -62,7 +62,13 @@ const FV = () => {
           ))}
         </motion.p>
       </div>
-      <div className="text-center mt-7 relative">
+      {/* <div className="text-center mt-7 relative"> */}
+      <motion.div
+        variants={slideUp({ delay: getAnimationDelay(1.5) })}
+        initial="hidden"
+        animate="show"
+        className="text-center mt-7 relative"
+      >
         <div className="z-40 relative">
           <button className="bg-white py-2 px-6 text-black rounded-lg text-sm">
             View Plans
@@ -72,7 +78,8 @@ const FV = () => {
           </button>
         </div>
         <Image src={svg} alt="line" className="absolute top-5" />
-      </div>
+        {/* </div> */}
+      </motion.div>
     </Wrapper>
   ) : (
     <></>

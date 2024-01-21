@@ -27,9 +27,9 @@ const Accordion = ({
         <h2 className="text-white text-lg">{question}</h2>
 
         {visible === question ? (
-          <span className="text-2xl">-</span>
+          <span className="text-2xl duration-300 delay-100">-</span>
         ) : (
-          <span className="text-2xl">+</span>
+          <span className="text-2xl duration-300 delay-100">+</span>
         )}
       </div>
       {visible === question ? (

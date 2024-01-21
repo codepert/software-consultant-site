@@ -1,11 +1,13 @@
 import {
   CTAType,
   ExperienceType,
+  FaqType,
   NavLinkType,
+  PricingType,
   ProjectType,
+  ServiceType,
   SocialLinkType,
-  SoftwareSkillType,
-} from '.';
+  SoftwareSkillType} from '.';
 
 export interface Section {
   title: string;
@@ -26,6 +28,25 @@ export interface HeroSectionType {
   };
   img: string,
   title: string[]
+}
+
+export interface ServiceSectionType {
+  title: string[],
+  description: string[],
+  items: ServiceType[]
+}
+
+export interface PricingSectionType {
+  title: string,
+  description:string,
+  items: PricingType[]
+}
+
+
+export interface FaqSectionType {
+  title: string,
+  description: string,
+  items: FaqType[]
 }
 
 export interface AboutSectionType extends Section {

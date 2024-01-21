@@ -36,6 +36,23 @@ export type ProjectType = {
   repo: string;
 };
 
+export interface ServiceType {
+  title: string,
+  content: string
+}
+export interface PricingType {
+  title: string,
+  discountPrice: string,
+  price: string,
+  plan: string[],
+  index: number
+}
+
+export interface FaqType {
+  question: string,
+  answer: string
+}
+
 export type StringKeyValueType = {
   [link: string]: string;
 };

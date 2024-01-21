@@ -94,3 +94,11 @@
   opacity: 0 !important;
   transition: width 0.2s ease-in-out, height 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
+
+.grid-cols-auto-232 {
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+}
+
+/* h1, h2, h3, h4, h5, h6, div, span, ul, li, p {
+  color: var(--color-primary);
+} */

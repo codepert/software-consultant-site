@@ -27,7 +27,8 @@ module.exports = {
         'secondary-dark': '#102D44',
 				'ternary-dark': 'var(--color-bg-secondary)',
         'black-primary': '#272727',
-        'black-secondary': '#141414'
+        'black-secondary': '#141414',
+        'primary': '#b3b3b3'
       },
       transitionTimingFunction: {
         'in-scroll': 'cubic-bezier(0.645, 0.045, 0.355, 1)',

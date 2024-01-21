@@ -25,7 +25,7 @@ const Faq = () => {
       variants={slideUp({ delay: getAnimationDelay(3) })}
       initial="hidden"
       animate="show"
-      className="mt-32"
+      className="py-32"
     >
       <main className="">
         <div className="=">

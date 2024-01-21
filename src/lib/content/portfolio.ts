@@ -24,8 +24,8 @@ export const seoData = {
   description:
     'Web design & development.',
   author: author.name,
-  image:'https://user-images.githubusercontent.com/68834718/217467445-0b0d2d63-f8ad-4702-8474-814eb2cbb3be.png',
-  url: 'https://vatsalsinghkv.vercel.app/',
+  image:'/screenshot.png',
+  url: 'https://szili-lp.vercel.app/',
   keywords: [
     'Kodemorph',
     'web design',

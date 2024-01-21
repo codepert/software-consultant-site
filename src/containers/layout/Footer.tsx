@@ -2,7 +2,7 @@ import { footerSection } from '@/lib/content/footer';
 
 const Footer = () => {
   return (
-    <footer className="container max-w-[1120px] mx-auto font-mono text-xs">
+    <footer className="container max-w-[1120px] mx-auto font-mono text-xs lg:px-0 px-12">
       <div className="lg:flex md:flex pt-16 px-4">
         <div className="w-1/2">
           <h3 className="text-white text-3xl py-2">{footerSection.title}</h3>
@@ -20,7 +20,7 @@ const Footer = () => {
                 {footerSection.readToGetStarted}
               </h3>
             </div>
-            <div className="lg:pl-4">
+            <div className="lg:pl-4 lg:mt-0 mt-3">
               <button className="py-4 px-6 bg-white font-bold text-black rounded-full">
                 Book a call
               </button>

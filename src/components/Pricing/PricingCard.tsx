@@ -19,33 +19,32 @@ const PricingCard = ({
     setDomLoaded(true);
   }, []);
 
-  let bgColorClassName = '';
-  let buttonClassName = '';
+  let boxClassName = 'bg-zinc-900 mt-4';
+  let buttonClassName = 'bg-blue-600 text-white';
+  let textColorClassName = '';
 
   if (index == 1) {
-    bgColorClassName = 'bg-blue-600';
+    boxClassName = 'bg-blue-600';
     buttonClassName = 'bg-white text-blue-600';
-  } else {
-    bgColorClassName = 'bg-zinc-900';
-    buttonClassName = 'bg-blue-600 text-white';
+    textColorClassName = 'text-white';
   }
 
   // eslint-disable-next-line no-console
   return domLoaded ? (
     <motion.div
       {...rest}
-      className={`w-full max-w-[350px] mt-10 h-[433px] ${bgColorClassName} rounded-xl relative`}
+      className={`w-full max-w-[350px] h-[433px] border border-zinc-800 ${boxClassName} rounded-xl relative`}
     >
       <div className="px-6 py-6 space-y-1 ">
-        <h4 className="font-medium capitalize duration-200 group-hover:text-accent">
-          <p className="font-bold text-white text-xl">{title}</p>
+        <h4 className="font-bold capitalize duration-200 group-hover:text-accent text-white text-xl">
+          {title}
         </h4>
         <p className="text-sm  line-through">{discountPrice}</p>
         <p className="text-4xl text-white">{price}</p>
         <div className="mt-6">
-          <ul className="list-disc ml-4 text-sm">
+          <ul className="list-disc ml-4 text-sm text-primary">
             {plan.map((item, i) => (
-              <li key={i} className="leading-7 ">
+              <li key={i} className={`leading-7 ${textColorClassName}`}>
                 {' '}
                 {item}
               </li>

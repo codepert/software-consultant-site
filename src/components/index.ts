@@ -6,6 +6,7 @@ import ServiceCard from './services/ServiceCard';
 import Cursor from './ui/Cursor';
 import ShowLottie from './ui/ShowLottie';
 import Sidebar from './ui/Sidebar';
+import SmoothScroll from './ui/SmoothScroll';
 import Wrapper from './ui/Wrapper';
 
 export {
@@ -16,4 +17,5 @@ export {
   ServiceCard,
   ShowLottie,
   Sidebar,
+  SmoothScroll,
   Wrapper};

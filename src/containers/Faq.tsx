@@ -24,7 +24,7 @@ const Faq = () => {
     DEFAULT_ANIMATION_DELAY + increment * i;
   return (
     <Wrapper
-      id="about"
+      id="faq"
       animate={false}
       {...getSectionAnimation}
       className="justify-center gap-6 mt-12 xs:gap-7 xs:mt-0 pt-32"
@@ -36,8 +36,8 @@ const Faq = () => {
         // {...getSectionAnimation}
       >
         <main className="">
-          <div className="=">
-            <h1 className="mt-2 tracking-wide text-4xl text-white text-center">
+          <div className="">
+            <h1 className="mt-2 font-bold tracking-wide text-4xl text-white text-center">
               {FaqSection.title}
             </h1>
             <p className="text-center mt-3 text-primary">

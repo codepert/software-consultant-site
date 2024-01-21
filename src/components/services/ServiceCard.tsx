@@ -17,15 +17,15 @@ const ServiceCard = ({
   }, []);
 
   return domLoaded ? (
-    <motion.div {...rest} className="w-full max-w-[350px] mt-12">
-      <div className="overflow-hidden "></div>
-      <div className="p-4 py-5 space-y-1 bg-zinc-900 rounded-xl  h-[180px]">
-        <div className="flex items-center justify-between"></div>
-        <h4 className="font-medium capitalize duration-200 group-hover:text-accent">
-          <p className="text-center font-bold text-white">{title}</p>
-        </h4>
-        <p className="text-base">{content}</p>
-      </div>
+    <motion.div
+      {...rest}
+      className="w-full min-w-[330px] mt-1 bg-zinc-900 rounded-xl h-[200px] py-9 px-8 space-y-1  text-left border border-zinc-800"
+    >
+      <div className="flex items-center justify-between"></div>
+      <h4 className="font-medium capitalize duration-200 group-hover:text-accent text-white text-2xl">
+        {title}
+      </h4>
+      <p className="text-sm py-3 text-primary">{content}</p>
     </motion.div>
   ) : (
     <></>

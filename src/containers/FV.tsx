@@ -41,10 +41,10 @@ const FV = () => {
             variants={slideUp({ delay: getAnimationDelay(3) })}
             initial="hidden"
             animate="show"
-            className="text-slate-900 text-[72px] dark:text-slate-200 capitalize mb-2 leading-[1.1]"
+            className="text-slate-900 text-7xl dark:text-slate-200 capitalize mb-2 leading-[1.1]"
           >
             {title.map((item, i) => (
-              <p key={i} className="mt-2 tracking-wide">
+              <p key={i} className="mt-1 tracking-wide ">
                 {item}
               </p>
             ))}
@@ -55,7 +55,7 @@ const FV = () => {
           variants={slideUp({ delay: getAnimationDelay(1) })}
           initial="hidden"
           animate="show"
-          className="text-base md:text-lg"
+          className="text-base md:text-xl text-primary"
         >
           {description.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
@@ -63,11 +63,11 @@ const FV = () => {
         </motion.p>
       </div>
       <div className="text-center mt-7 relative">
-        <div className="z-40 ">
-          <button className="bg-white py-2 px-5 text-black border-2 rounded-lg">
+        <div className="z-40 relative">
+          <button className="bg-white py-2 px-6 text-black rounded-lg text-sm">
             View Plans
           </button>
-          <button className="ml-3 py-2 px-5 text-white border-white border-2 rounded-lg">
+          <button className="ml-3 py-2 px-6 text-white border border-zinc-800 bg-zinc-950 rounded-lg text-sm">
             Contact us
           </button>
         </div>

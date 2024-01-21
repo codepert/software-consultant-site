@@ -19,7 +19,7 @@ const Accordion = ({
   };
 
   return (
-    <div className="mt-5 bg-zinc-900 py-7 px-12 rounded-lg">
+    <div className="mt-5 bg-zinc-900 py-7 px-12 rounded-lg border border-zinc-800">
       <div
         onClick={() => handleClick(question)}
         className="flex flex-row items-center gap-x-8 cursor-pointer justify-between "
@@ -27,16 +27,15 @@ const Accordion = ({
         <h2 className="text-white text-lg">{question}</h2>
 
         {visible === question ? (
-          <span>
-            {/* <Image src={Arrow} alt="" className="rotate-180 duration-500" /> */}
-            +
-          </span>
+          <span className="text-2xl">-</span>
         ) : (
-          <span>{/* <Image src={Arrow} alt="" /> */}-</span>
+          <span className="text-2xl">+</span>
         )}
       </div>
       {visible === question ? (
-        <p className="text-sm duration-700 delay-150 mt-3">{answer}</p>
+        <p className="text-sm duration-700 delay-150 mt-3 text-primary">
+          {answer}
+        </p>
       ) : null}
     </div>
   );

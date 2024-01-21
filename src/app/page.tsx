@@ -1,5 +1,5 @@
-import { Faq, Hero, Layout, Pricing, Service, FV } from '@/containers';
-
+import { SmoothScroll } from '@/components';
+import { Faq, FV, Hero, Layout, Pricing, Service } from '@/containers';
 const Home = () => {
   return (
     <>

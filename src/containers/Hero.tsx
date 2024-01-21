@@ -24,7 +24,9 @@ const Hero = () => {
       className="py-24 md:py-32 gap-6 mt-12 xs:gap-7 xs:mt-0"
     >
       <div className="bg-black-secondary w-full max-w-[925px] mx-auto h-[545px] leading-[545px] text-center mt-24">
-        <h1 className="text-[50px] text-white">DESIGN HERE SOON</h1>
+        <h1 className="text-5xl leading-[545px] text-white animate-pulse">
+          DESIGN HERE SOON
+        </h1>
       </div>
     </Wrapper>
   ) : (

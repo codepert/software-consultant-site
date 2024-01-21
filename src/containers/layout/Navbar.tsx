@@ -61,7 +61,7 @@ const NavItem = ({ href, children, onClick, index, delay }: NavItemsProps) => {
     >
       <CLink
         href={href || `/#${children}`}
-        className="block p-2 duration-500 hover:text-accent font-bold"
+        className="block p-2 duration-500 hover:text-accent text-sm"
         onClick={onClick}
         withPadding
       >
@@ -89,10 +89,10 @@ const Navbar = () => {
       initial="hidden"
       animate="show"
       id="navbar"
-      className="fixed  max-w-[1120px] container mx-auto rounded-full h-[65px] mt-5  bg-black-secondary inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
+      className="fixed  max-w-screen-lg container mx-auto xs:rounded-none lg:rounded-full md:rounded-full h-[65px] mt-5  bg-black-secondary inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
     >
       <h1 className="relative text-2xl capitalize font-extrabold text-white text-accent group">
-        <Link href="/#hero" className="block font-bold">
+        <Link href="/#hero" className="block font-bold text-xl">
           {author.name}
           <div className="absolute bottom-1.5 left-0 h-[1px] w-0 group-hover:w-full bg-accent duration-300"></div>
         </Link>

@@ -5,11 +5,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        signature: ['Plus Jakarta Sans', 'agustina', 'sans-serif'],
-        // sans: ['Inter', 'sans-serif'],
-        sans: ['Inter', 'sans-serif'],
+        signature: ['"Plus Jakarta Sans"', 'agustina', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
         mono: ['Roboto Mono', 'monospace'],
-        jakarta: ['Plus Jakarta Sans']
+        jakarta: ['"Plus Jakarta Sans"']
       },
       screens: {
         xs: '375px',

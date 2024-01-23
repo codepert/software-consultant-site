@@ -1,4 +1,4 @@
-import { Inter, Roboto_Mono, Plus_Jakarta_Sans } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans,Roboto_Mono } from 'next/font/google';
 
 const inter = Inter({
   variable: '--font-inter',

@@ -30,27 +30,15 @@ const Cursor = ({ className = '' }: Props) => {
   };
 
   return (
-    <div>
-      <div
-        className={` fixed w-[100%] h-[140%] z-30 transition duration-300 pointer-events-none -translate-x-1/2 -translate-y-1/2 bg-torch ${className} rounded-xl hover:pointer-events-none`}
-        style={{
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-          width: 10,
-          height: 10,
-          backgroundColor: '#fff',
-        }}
-      ></div>
-      {/* <div
-        className={` fixed w-[100%] h-[140%] z-30 transition duration-700 pointer-events-none -translate-x-1/2 border border-slate-400 -translate-y-1/2 ${className} rounded-full `}
-        style={{
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-          width: 50,
-          height: 50,
-        }}
-      ></div> */}
-    </div>
+    <div
+      className={` fixed z-30 transition duration-300 pointer-events-none -translate-x-1/2 -translate-y-1/2 bg-torch ${className} rounded-full bg-white`}
+      style={{
+        left: `${position.x}px`,
+        top: `${position.y}px`,
+        width: 10,
+        height: 10,
+      }}
+    ></div>
   );
 };
 

@@ -118,6 +118,17 @@
   @apply cursor-none;
 }
 
+* {
+  cursor: none !important;
+}
+
+a,
+button {
+  &:hover {
+    cursor: none;
+  }
+}
+
 .cursor {
   &-dot {
     height: var(--cursor-dot-size);

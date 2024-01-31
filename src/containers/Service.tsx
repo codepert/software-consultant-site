@@ -32,7 +32,7 @@ const Service = () => {
             ))}
           </div>
           <div className="text-center py-2 mt-8">
-            <button className="py-4 px-8 bg-white text-black text-sm rounded-full">
+            <button className="py-4 px-8 bg-white text-black text-sm rounded-full font-bold">
               Book a Call
             </button>
           </div>

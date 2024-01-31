@@ -5,10 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        signature: ['"Plus Jakarta Sans"', 'agustina', 'sans-serif'],
-        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
-        mono: ['Roboto Mono', 'monospace'],
-        jakarta: ['"Plus Jakarta Sans"']
+        jakarta: ['"plus jakatra sans"', 'sans-serif'],
       },
       screens: {
         xs: '375px',
@@ -24,10 +21,10 @@ module.exports = {
         'dark-3': 'var(--color-dark-3)',
 
         'secondary-dark': '#102D44',
-				'ternary-dark': 'var(--color-bg-secondary)',
+        'ternary-dark': 'var(--color-bg-secondary)',
         'black-primary': '#272727',
         'black-secondary': '#141414',
-        'primary': '#b3b3b3'
+        primary: '#b3b3b3',
       },
       transitionTimingFunction: {
         'in-scroll': 'cubic-bezier(0.645, 0.045, 0.355, 1)',

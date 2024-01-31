@@ -1,10 +1,10 @@
+/* eslint-disable @next/next/no-page-custom-font */
 import { seoData } from '@/lib/content/portfolio';
 import ThemeProvider from '@/lib/hooks/use-theme';
-import fontVariables from '@/lib/utils/fonts';
 
 import Cursor from '@/components/ui/Cursor';
 
-import '../styles/globals.css';
+import '../styles/globals.scss';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -78,7 +78,7 @@ export default function RootLayout({
       <head>
         <script src="/scripts/no-flash.js" async />
       </head>
-      <body className={`text-text bg-black py-5 ${fontVariables}`}>
+      <body className="text-text bg-black py-5 font-jakarta" data-cursor>
         <Cursor className="hidden dark:lg:block" />
         <ThemeProvider>{children}</ThemeProvider>
       </body>

@@ -39,8 +39,8 @@ const PricingCard = ({
         <h4 className="font-bold capitalize duration-200 group-hover:text-accent text-white text-xl">
           {title}
         </h4>
-        <p className="text-sm  line-through">{discountPrice}</p>
-        <p className="text-4xl text-white">{price}</p>
+        <p className="text-sm  line-through text-primary">{discountPrice}</p>
+        <p className="text-4xl text-white font-bold">{price}</p>
         <div className="mt-6">
           <ul className="list-disc ml-4 text-sm text-primary">
             {plan.map((item, i) => (
@@ -53,7 +53,7 @@ const PricingCard = ({
         </div>
         <div className="text-center absolute bottom-5 w-[calc(100%-47px)]">
           <button
-            className={`${buttonClassName} py-3 px-5 rounded-lg w-full text-base`}
+            className={`${buttonClassName} py-3 px-5 rounded-lg w-full text-base font-bold`}
           >
             Get Stated
           </button>

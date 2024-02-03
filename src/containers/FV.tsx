@@ -6,13 +6,12 @@ import { getBreakpointsWidth } from '@/lib/utils/helper';
 import { Wrapper } from '@/components';
 
 import { getSectionAnimation } from '@/styles/animations';
-import { slideUp, fadeIn } from '@/styles/animations';
+import { fadeIn, slideUp } from '@/styles/animations';
 
+import svg from '~/line.svg';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-
-import svg from '~/line.svg';
 const FV = () => {
   const { title, description } = heroSection;
   // To avoid hydration error

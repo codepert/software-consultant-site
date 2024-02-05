@@ -38,7 +38,7 @@ const Hero = () => {
             alt="phone image"
             width={600}
             height={400}
-            className="absolute left-0 top-1 w-[680px] h-[424px]"
+            className="absolute left-0 top-1 w-[680px] h-[424px] "
           />
         </div>
         <div className="lg:shrink lg:w-2/5 w-full h-[424px]    bg-black-secondary rounded-xl relative mt-2">

@@ -24,7 +24,7 @@ const Hero = () => {
     //   {...getSectionAnimation}
     //   className="py-24 md:py-32 gap-6 mt-12 xs:gap-7 xs:mt-0"
     // >
-    <div className="flex flex-col justify-center h-full min-h-screen  w-full max-w-[1150px] mx-auto mt-24">
+    <div className="flex flex-col justify-center   w-full max-w-[1150px] mx-auto">
       {/* <p className="text-3xl leading-[545px]  text-white animate-pulse">
         DESIGN HERE SOON
       </p> */}

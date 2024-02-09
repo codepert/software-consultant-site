@@ -57,6 +57,11 @@
     src: url('/fonts/PlusJakartaSans-Light.ttf');
   }
 
+  @font-face {
+    font-family: 'plus jakatra sans-bold';
+    src: url('/fonts/PlusJakartaSans-Bold.ttf');
+  }
+
   * {
     @apply focus:outline-dashed outline-[3px] outline-offset-4 outline-accent;
   }

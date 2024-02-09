@@ -32,7 +32,7 @@ const FV = () => {
     <Wrapper
       id="about"
       {...getSectionAnimation}
-      className="flex flex-col justify-center h-full min-h-screen gap-6 mt-12 xs:gap-7 xs:mt-0"
+      className="flex flex-col justify-center  gap-6 mt-24 xs:gap-7 xs:mt-0"
     >
       <div className="space-y-4 text-center gap-16 ">
         <div className="text-4xl font-bold tracking-tighter md:text-7xl">
@@ -43,7 +43,7 @@ const FV = () => {
             className="text-slate-900 text-7xl dark:text-slate-200 capitalize mb-2 leading-[1.1]"
           >
             {title.map((item, i) => (
-              <p key={i} className="mt-1 tracking-wide ">
+              <p key={i} className="mt-1 tracking-wide  font-jakartaBold">
                 {item}
               </p>
             ))}
@@ -54,10 +54,12 @@ const FV = () => {
           variants={slideUp({ delay: getAnimationDelay(1) })}
           initial="hidden"
           animate="show"
-          className="text-base md:text-xl text-primary"
+          className="text-base md:text-lg text-primary "
         >
           {description.map((paragraph, i) => (
-            <p key={i}>{paragraph}</p>
+            <p key={i} className=" ">
+              {paragraph}
+            </p>
           ))}
         </motion.p>
       </div>

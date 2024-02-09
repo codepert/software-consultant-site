@@ -36,18 +36,20 @@ const FV = () => {
     >
       <div className="space-y-4 text-center gap-16 ">
         <div className="text-4xl font-bold tracking-tighter md:text-7xl">
-          <motion.h1
-            variants={slideUp({ delay: getAnimationDelay(0.5) })}
+          {/* <motion.h1
+            variants={slideUp({ delay: getAnimationDelay(3) })}
             initial="hidden"
             animate="show"
             className="text-slate-900 text-7xl dark:text-slate-200 capitalize mb-2 leading-[1.1]"
-          >
+          > */}
+          <div className="text-slate-900 text-7xl dark:text-slate-200 capitalize mb-2 leading-[1.1]">
             {title.map((item, i) => (
               <p key={i} className="mt-1 tracking-wide  font-jakartaBold">
                 {item}
               </p>
             ))}
-          </motion.h1>
+            {/* </motion.h1> */}
+          </div>{' '}
         </div>
         <div className="text-2xl font-bold tracking-tighter md:text-2xl"></div>
         <motion.p
